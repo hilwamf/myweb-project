@@ -1,102 +1,93 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #fff0f5;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffe6f0, #ffd6ec);
 }
 
+/* HEADER */
 header {
-    background-color: #ff69b4;
-    text-align: center;
-    padding: 20px;
+    background: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 header h1 {
-    color: white;
     margin: 0;
+    color: #ff1493;
 }
 
 nav a {
-    margin: 0 15px;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    margin-left: 20px;
+    color: #333;
+    font-weight: 500;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #ff1493;
 }
 
+/* HERO SECTION */
 .hero {
-    text-align: center;
-    padding: 40px;
-}
-
-.hero img {
-    width: 200px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.content {
-    padding: 40px;
-    text-align: center;
-}
-
-.portfolio {
+    min-height: 80vh;
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 40px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    width: 280px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 15px;
-    background-color: #ff69b4;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-.btn:hover {
-    background-color: #ff1493;
-}
-
-footer {
-    background: #ff69b4;
-    text-align: center;
-    padding: 10px;
-    color: white;
-    margin-top: 30px;
 }
 
 .hero-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
-    padding: 60px;
+    gap: 60px;
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(255, 20, 147, 0.2);
     flex-wrap: wrap;
+}
+
+.hero-image img {
+    width: 250px;
+    border-radius: 50%;
+    border: 6px solid #ff1493;
+}
+
+.hero-text h2 {
+    margin: 0;
+    font-size: 30px;
+    color: #ff1493;
+}
+
+.hero-text p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff1493;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e60073;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    margin-top: 40px;
 }
