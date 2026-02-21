@@ -91,72 +91,83 @@ footer {
     background: white;
     margin-top: 40px;
 }
+/* ===== PORTFOLIO MODERN CLEAN ===== */
 
-/* ===== PORTFOLIO SECTION ===== */
-
-.portfolio-section {
-    padding: 60px 80px;
-    background: #ffe6f2;
-    min-height: 80vh;
+.portofolio {
+    padding: 70px 80px;
+    background: #fff0f6;
 }
 
-.section-title {
+.portofolio-title {
     text-align: center;
     color: #ff1493;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    font-size: 28px;
 }
 
-.portfolio-container {
-    display: flex;
+.portofolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
-.portfolio-card {
+.project-card {
     background: white;
-    width: 320px;
-    border-radius: 20px;
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(255, 20, 147, 0.15);
-    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
 }
 
-.portfolio-card:hover {
+.project-card:hover {
     transform: translateY(-8px);
 }
 
-.portfolio-card img {
+.project-card img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
 }
 
-.card-content {
+.project-content {
     padding: 20px;
 }
 
-.card-content h3 {
+.project-content h3 {
     margin-top: 0;
     color: #ff1493;
 }
 
-.card-content p {
+.project-content p {
     font-size: 14px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.tags {
     margin-bottom: 15px;
 }
 
-.btn-small {
+.tags span {
+    background: #ffe0ef;
+    color: #ff1493;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.view-btn {
     display: inline-block;
-    padding: 8px 18px;
+    padding: 8px 20px;
     background: #ff1493;
     color: white;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 25px;
     font-size: 14px;
     transition: 0.3s;
 }
 
-.btn-small:hover {
+.view-btn:hover {
     background: #e60073;
 }
