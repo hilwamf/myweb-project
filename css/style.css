@@ -171,3 +171,154 @@ footer {
 .view-btn:hover {
     background: #e60073;
 }
+
+/* ===== ABOUT SECTION ===== */
+
+.about-section {
+    padding: 80px 100px;
+    background: #fff0f6;
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.about-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    color: #ff1493;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ===== SKILLS GRID ===== */
+
+footer {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer h3 {
+    color: #ff1493;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.skill-item {
+    background: #ffe0ef;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: #ff1493;
+    transition: 0.3s;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    background: #ff1493;
+    color: white;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #777;
+}
+
+/* ===== CONTACT SECTION ===== */
+
+.contact-section {
+    padding: 80px 20px;
+    background: #ffe6f2;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(255, 20, 147, 0.15);
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #ff1493;
+}
+
+.contact-info {
+    margin-top: 40px;
+}
+
+.contact-info p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #ff1493;
+    font-weight: 600;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
